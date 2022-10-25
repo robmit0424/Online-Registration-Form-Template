@@ -1,0 +1,126 @@
+/*
+    Colors:
+    Dark Blue: #2d3945
+    Dark Grey: #4d5761
+    Heading Color: #2f3a46
+    Label Color: #516476
+    Button Color: #4ebbb5
+*/
+body{
+    display:flex;
+    flex-direction:column;
+    margin:0;
+}
+header{
+    display:flex;
+    background-color:#2d3945;
+    color:#f2f2f2;
+    justify-content: center;
+}
+.intro{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-bottom: 3px solid #2d3945;
+    margin-bottom:3px;
+}
+.intro h2{
+    margin-bottom:3px;
+    font-size:20px;
+}
+h2, h3{
+    color:#2d3945
+}
+.intro p{
+    margin-top:8px;
+}
+label{
+    color:#516476;
+    margin-bottom:4px;
+}
+button{
+    background-color:#4ebbb5;
+    color:#f2f2f2;
+    font-size:20px;
+    border:none;
+    height:52px;
+    width:260px;
+    margin-top:20px;
+    margin-left: 25px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 40px;
+    border-top:solid 1px #4d5761;
+}
+fieldset{
+    border: 0px;
+    display: flex;
+    flex-direction: column;
+}
+input[type="text" i] {
+    height:52px;
+    width:260px;
+}
+input[type="tel" i] {
+    height:52px;
+    width:260px;
+}
+input[type="email" i] {
+    height:52px;
+    width:260px;
+}
+input[type="number" i] {
+    height:52px;
+    width:120px;
+}
+#checks{
+    display:flex;
+    flex-direction: column;
+}
+main{
+    width:320px;
+    align-self:center;
+}
+#state{
+    width: 130px;
+    height: 30px;
+}
+label:first-of-type{
+    margin-top:15px;
+}
+textarea{
+    width: 280px;
+    height: 200px;
+    resize:none;
+}
+form h2{
+    margin-left: 15px;
+}
+fieldset{
+    padding-top:0px;
+    padding-bottom:15px;
+}
+legend{
+    font-size: 20px;
+    color:#2f3a46;
+    text-align: left;
+}
+input:focus {
+    outline: #274260 2px solid;
+    border-radius: 5px;
+  }
+@media (min-width:768px){
+    main, button, textarea{
+        width:768px;
+    }
+    #first{
+        display: inline-block;
+    }
+    #first input{
+        margin:10px;
+    }
+}
