@@ -38,6 +38,7 @@ h2, h3{
 label{
     color:#516476;
     margin-bottom:4px;
+    margin-bottom: 30px;
 }
 button{
     background-color:#4ebbb5;
@@ -113,14 +114,33 @@ input:focus {
     outline: #274260 2px solid;
     border-radius: 5px;
   }
-@media (min-width:768px){
-    main, button, textarea{
-        width:768px;
+  @media (min-width:768px) {
+    
+    main, button, textarea {
+      width: 768px;
     }
-    #first{
-        display: inline-block;
+  
+    fieldset#first {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: initial;
+      align-items: center;
+      row-gap: 25px;
+      margin-top: 25px;
     }
-    #first input{
-        margin:10px;
+  
+    #first label {
+      flex-basis: 25%;
     }
-}
+  
+    #first input,
+    #first select {
+      flex-basis: 60%;
+      flex-grow: 1;
+    }
+  
+    #first #zip {
+      max-width: 25%;
+    }
+  }
