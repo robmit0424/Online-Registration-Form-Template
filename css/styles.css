@@ -6,6 +6,14 @@
     Label Color: #516476
     Button Color: #4ebbb5
 */
+html{
+  font-family: 'Libre Baskerville';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/librebaskerville/v14/kmKnZrc3Hgbbcjq75U4uslyuy4kn0qNXaxMaC82U-ro.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
 body{
     display:flex;
     flex-direction:column;
@@ -87,7 +95,7 @@ main{
     align-self:center;
 }
 #state{
-    width: 130px;
+    width: 268px;
     height: 30px;
 }
 label:first-of-type{
@@ -110,14 +118,18 @@ legend{
     color:#2f3a46;
     text-align: left;
 }
-input:focus {
+input[type="number"]:focus, input[type="text"]:focus, input[type="email"]:focus, input[type="tel"]:focus,
+ textarea:focus,select:focus {
     outline: #274260 2px solid;
     border-radius: 5px;
   }
   @media (min-width:768px) {
     
-    main, button, textarea {
+    main {
       width: 768px;
+    }
+    textarea, button{
+        width:700px;
     }
   
     fieldset#first {
